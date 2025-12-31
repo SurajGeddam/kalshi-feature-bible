@@ -1,0 +1,1882 @@
+================================================================================
+SCREENSHOT VERIFICATION REPORT
+================================================================================
+
+Total screenshots: 106
+
+KNOWN ISSUES (❌):
+--------------------------------------------------------------------------------
+
+❌ Screenshot 012: Log In Modal
+   File: 012-onboarding-login-modal.png
+   Should show: Log in modal with Google, Apple, and email options
+   User goal: - Access existing Kalshi account
+- Choose preferred authentication method
+- Quickly return to browsi...
+   Flow: 1. User clicks "Log in" button in header (white button, top right)
+2. Modal overlay appears, centere...
+
+❌ Screenshot 014: Legal Terms Modal
+   File: 014-onboarding-legal-terms-modal.png
+   Should show: Legal terms popup showing all agreements and policies
+   User goal: - Review legal terms and agreements before signing up
+- Understand what they're agreeing to
+- Access...
+   Flow: 1. User clicks "reviewing →" link in legal disclaimer (from sign-up modal, login modal, or email inp...
+
+❌ Screenshot 102: Transfers Page (Banking & Deposits)
+   File: 102-account-transfers-page.png
+   Should show: Transfers page showing deposit/withdrawal options, linked accounts, and transaction history
+   User goal: - Deposit funds to account
+- Withdraw funds from account
+- Manage linked bank accounts
+- View transf...
+   Flow: 1. User clicks "Transfers" in hamburger menu or right sidebar
+2. Page routes to Transfers page
+3. **...
+
+
+================================================================================
+COMPLETE VERIFICATION CHECKLIST
+================================================================================
+
+For each screenshot:
+1. Open the image file
+2. Read the description below
+3. Verify the image matches
+4. Mark as ✅ or ❌
+
+
+================================================================================
+Screenshot 010: Landing Page (Logged Out State)
+Status: ❓ TO VERIFY
+File: screenshots/010-discovery-landing-page.png
+
+Should show: Main landing page showing live market, navigation, and promotional sections
+
+User goal context: - Discover markets and understand what Kalshi offers before signing up
+- View live market activity and pricing
+- Navigate to different market categori...
+
+Flow context: 1. User visits kalshi.com while logged out
+2. Sees main navigation bar with Markets, Live, Ideas, API links
+3. Views trending categories and market fi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 011: Sign Up Modal
+Status: ❓ TO VERIFY
+File: screenshots/011-onboarding-signup-modal.png
+
+Should show: Sign up modal with Google, Apple, and email options
+
+User goal context: - Create a new Kalshi account quickly
+- Choose preferred authentication method
+- Understand legal terms before proceeding...
+
+Flow context: 1. User clicks "Sign up" button in header (green button, top right)
+2. Modal overlay appears on right side of screen
+3. User sees three sign-up option...
+
+[ ] Verified
+
+================================================================================
+Screenshot 012: Log In Modal
+Status: ❌ KNOWN ISSUE
+File: screenshots/012-onboarding-login-modal.png
+
+Should show: Log in modal with Google, Apple, and email options
+
+User goal context: - Access existing Kalshi account
+- Choose preferred authentication method
+- Quickly return to browsing markets...
+
+Flow context: 1. User clicks "Log in" button in header (white button, top right)
+2. Modal overlay appears, centered on screen
+3. User sees two social login options:...
+
+[ ] Verified
+
+================================================================================
+Screenshot 013: Email Sign-Up with Validation
+Status: ❓ TO VERIFY
+File: screenshots/013-onboarding-email-validation.png
+
+Should show: Email input screen with real-time validation error
+
+User goal context: - Enter email address to continue sign-up process
+- Understand if email format is valid before proceeding...
+
+Flow context: 1. User clicks "Continue with Email" from sign-up modal (011)
+2. Navigates to dedicated email input page (`kalshi.com/sign-up/email`)
+3. Sees question...
+
+[ ] Verified
+
+================================================================================
+Screenshot 014: Legal Terms Modal
+Status: ❌ KNOWN ISSUE
+File: screenshots/014-onboarding-legal-terms-modal.png
+
+Should show: Legal terms popup showing all agreements and policies
+
+User goal context: - Review legal terms and agreements before signing up
+- Understand what they're agreeing to
+- Access specific legal documents...
+
+Flow context: 1. User clicks "reviewing →" link in legal disclaimer (from sign-up modal, login modal, or email input screen)
+2. Modal overlay appears on right side ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 015: Password Creation with Real-Time Validation
+Status: ❓ TO VERIFY
+File: screenshots/015-onboarding-password-creation.png
+
+Should show: Password creation screen with real-time requirement validation
+
+User goal context: - Create a secure password for account
+- Understand password requirements
+- See which requirements are met in real-time...
+
+Flow context: 1. User completes email input screen (013) with valid email
+2. Navigates to password creation page (`kalshi.com/sign-up/password`)
+3. Sees page title:...
+
+[ ] Verified
+
+================================================================================
+Screenshot 016: Duplicate Account Detection
+Status: ❓ TO VERIFY
+File: screenshots/016-onboarding-duplicate-account.png
+
+Should show: Duplicate account detection page
+
+User goal context: - Understand why sign-up failed (email already registered)
+- Access existing account or update email address
+- Continue with account creation if email...
+
+Flow context: 1. User attempts to sign up with email address (via email sign-up or social login)
+2. System detects email is already associated with an active accoun...
+
+[ ] Verified
+
+================================================================================
+Screenshot 017: Logged-In Discovery Page (Post-OAuth)
+Status: ❓ TO VERIFY
+File: screenshots/017-market-page-logged-in-discovery.png
+
+Should show: Discovery page after successful Google OAuth login
+
+User goal context: - View markets after successful login
+- Discover trending markets and categories
+- Access watchlist and portfolio
+- View account balance and status
+- ...
+
+Flow context: 1. User completes OAuth flow from duplicate account page (016)
+2. OAuth callback: `kalshi.com/oauth/google/callback` (or `/oauth/apple/callback`)
+3. S...
+
+[ ] Verified
+
+================================================================================
+Screenshot 018: Apple OAuth Flow (First-Time Authorization)
+Status: ❓ TO VERIFY
+File: screenshots/018-onboarding-apple-oauth.png
+
+Should show: Apple ID authentication page for first-time OAuth
+
+User goal context: - Authenticate with Apple ID to sign up or log in to Kalshi
+- Grant permission for Kalshi to use Apple account information
+- Complete OAuth flow to ac...
+
+Flow context: 1. User clicks "Continue with Apple" from sign-up modal (011), login modal (012), or duplicate account page (016)
+2. Kalshi redirects to Apple's OAuth...
+
+[ ] Verified
+
+================================================================================
+Screenshot 019: Homepage (Logged In - Trending)
+Status: ❓ TO VERIFY
+File: screenshots/019-discovery-homepage-trending.png
+
+Should show: Logged-in homepage showing trending markets
+
+User goal context: - View trending markets after logging in
+- Discover popular markets across categories
+- Access watchlist and portfolio
+- Navigate to specific markets...
+
+Flow context: 1. User logs in (via OAuth or email)
+2. Homepage automatically routes to "Trending" view
+3. **URL Routing:**
+   - **"For you" tab (default):** `kalshi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 020: Portfolio Empty State
+Status: ❓ TO VERIFY
+File: screenshots/020-portfolio-empty-state.png
+
+Should show: Portfolio tab showing empty state when user has no open positions
+
+User goal context: - View open positions and portfolio value
+- Understand portfolio status
+- Navigate to markets where user has positions...
+
+Flow context: 1. User clicks "Portfolio" tab in left sidebar
+2. Portfolio tab becomes highlighted (green)
+3. If user has no open positions:
+   - Shows "No open posi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 021: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/021-market-page-detailed-trading.png
+
+Should show: Detailed market page with trading interface for specific prediction
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 022: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/022-market-page-more-markets-expanded.png
+
+Should show: Expanded "More markets" list showing all predictions
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 023: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/023-market-page-prediction-selected.png
+
+Should show: Trading interface updated after selecting a prediction
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 024: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/024-market-page-rules-display.png
+
+Should show: Rules section displaying rules for selected prediction
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 025: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/025-market-page-prediction-switch-1.png
+
+Should show: Prediction switch state 1 showing synchronized update when switching predictions
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 026: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/026-market-page-prediction-switch-2.png
+
+Should show: Prediction switch state 2 showing synchronized update when switching predictions
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 027: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/027-market-page-rules-dropdown-selection.png
+
+Should show: Rules dropdown selection showing UX inconsistency (updates trading but not chart/list)
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 028: Calendar Popup and Event-Based Routing for Mentions Markets
+Status: ❓ TO VERIFY
+File: screenshots/028-market-page-calendar-popup-1.png
+
+Should show: Calendar popup showing Open tab with NFL games list
+
+User goal context: - Navigate between different events/games for the same market type (e.g., "Mentions" markets)
+- Access both open (future) and determined (past) market...
+
+Flow context: 1. User is on a mentions market page (e.g., "What will the announcers say during the Carolina at Tampa Bay professional football game?")
+2. User click...
+
+[ ] Verified
+
+================================================================================
+Screenshot 029: Calendar Popup and Event-Based Routing for Mentions Markets
+Status: ❓ TO VERIFY
+File: screenshots/029-market-page-calendar-popup-2.png
+
+Should show: Calendar popup showing different set of games
+
+User goal context: - Navigate between different events/games for the same market type (e.g., "Mentions" markets)
+- Access both open (future) and determined (past) market...
+
+Flow context: 1. User is on a mentions market page (e.g., "What will the announcers say during the Carolina at Tampa Bay professional football game?")
+2. User click...
+
+[ ] Verified
+
+================================================================================
+Screenshot 030: Calendar Popup and Event-Based Routing for Mentions Markets
+Status: ❓ TO VERIFY
+File: screenshots/030-market-page-determined-history.png
+
+Should show: Determined/history market accessed through calendar (Los Angeles R at Atlanta)
+
+User goal context: - Navigate between different events/games for the same market type (e.g., "Mentions" markets)
+- Access both open (future) and determined (past) market...
+
+Flow context: 1. User is on a mentions market page (e.g., "What will the announcers say during the Carolina at Tampa Bay professional football game?")
+2. User click...
+
+[ ] Verified
+
+================================================================================
+Screenshot 031: Calendar Popup and Event-Based Routing for Mentions Markets
+Status: ❓ TO VERIFY
+File: screenshots/031-market-page-calendar-open-market.png
+
+Should show: Open market accessed through calendar (Seattle at San Francisco)
+
+User goal context: - Navigate between different events/games for the same market type (e.g., "Mentions" markets)
+- Access both open (future) and determined (past) market...
+
+Flow context: 1. User is on a mentions market page (e.g., "What will the announcers say during the Carolina at Tampa Bay professional football game?")
+2. User click...
+
+[ ] Verified
+
+================================================================================
+Screenshot 032: Ideas/Activity Feed for Markets
+Status: ❓ TO VERIFY
+File: screenshots/032-social-ideas-activity-feed-1.png
+
+Should show: Activity feed showing user comments and embedded market cards
+
+User goal context: - View and engage with social content related to markets
+- Share predictions and market insights
+- Comment on and discuss markets with other users
+- D...
+
+Flow context: 1. User navigates to a market page (e.g., mentions market for NFL games) or Ideas page (`kalshi.com/ideas/posts/...`)
+2. User sees "Ideas" and "Activi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 033: Ideas/Activity Feed for Markets
+Status: ❓ TO VERIFY
+File: screenshots/033-social-ideas-activity-feed-2.png
+
+Should show: Ideas tab with post input and user post with embedded market card
+
+User goal context: - View and engage with social content related to markets
+- Share predictions and market insights
+- Comment on and discuss markets with other users
+- D...
+
+Flow context: 1. User navigates to a market page (e.g., mentions market for NFL games) or Ideas page (`kalshi.com/ideas/posts/...`)
+2. User sees "Ideas" and "Activi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 034: Ideas/Activity Feed for Markets
+Status: ❓ TO VERIFY
+File: screenshots/034-social-post-input-inline.png
+
+Should show: Inline post input that appears in the chat log
+
+User goal context: - View and engage with social content related to markets
+- Share predictions and market insights
+- Comment on and discuss markets with other users
+- D...
+
+Flow context: 1. User navigates to a market page (e.g., mentions market for NFL games) or Ideas page (`kalshi.com/ideas/posts/...`)
+2. User sees "Ideas" and "Activi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 035: Ideas/Activity Feed for Markets
+Status: ❓ TO VERIFY
+File: screenshots/035-social-activity-feed-detailed.png
+
+Should show: Detailed activity feed with user profiles and market cards
+
+User goal context: - View and engage with social content related to markets
+- Share predictions and market insights
+- Comment on and discuss markets with other users
+- D...
+
+Flow context: 1. User navigates to a market page (e.g., mentions market for NFL games) or Ideas page (`kalshi.com/ideas/posts/...`)
+2. User sees "Ideas" and "Activi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 036: Ideas/Activity Feed for Markets
+Status: ❓ TO VERIFY
+File: screenshots/036-social-comment-thread.png
+
+Should show: Comment thread showing nested replies and user badges
+
+User goal context: - View and engage with social content related to markets
+- Share predictions and market insights
+- Comment on and discuss markets with other users
+- D...
+
+Flow context: 1. User navigates to a market page (e.g., mentions market for NFL games) or Ideas page (`kalshi.com/ideas/posts/...`)
+2. User sees "Ideas" and "Activi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 037: Ideas/Activity Feed for Markets
+Status: ❓ TO VERIFY
+File: screenshots/037-social-ideas-page.png
+
+Should show: Dedicated Ideas page with navigation and post details
+
+User goal context: - View and engage with social content related to markets
+- Share predictions and market insights
+- Comment on and discuss markets with other users
+- D...
+
+Flow context: 1. User navigates to a market page (e.g., mentions market for NFL games) or Ideas page (`kalshi.com/ideas/posts/...`)
+2. User sees "Ideas" and "Activi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 038: Timeline and Payout Section
+Status: ❓ TO VERIFY
+File: screenshots/038-market-page-timeline-payout.png
+
+Should show: Timeline and payout section showing market lifecycle and payout schedule
+
+User goal context: - Understand when a market opens and closes
+- Know when to expect payouts
+- Understand market lifecycle and settlement process
+- See market identifier...
+
+Flow context: 1. User is on a market page
+2. User sees "Timeline and payout" section (with calendar icon)
+3. User clicks on "Timeline and payout" to expand/collapse...
+
+[ ] Verified
+
+================================================================================
+Screenshot 039: People are also buying Recommendations
+Status: ❓ TO VERIFY
+File: screenshots/039-market-page-people-also-buying.png
+
+Should show: "People are also buying" section showing top 3 recommended markets
+
+User goal context: - Discover related markets that other users are trading
+- Find markets similar to current market
+- Explore additional trading opportunities
+- See what...
+
+Flow context: 1. User is on a market page
+2. User scrolls down to see "People are also buying" section
+3. Section shows top 3 recommended markets initially
+4. Each ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 040: Market Rules Documentation System
+Status: ❓ TO VERIFY
+File: screenshots/040-market-page-full-rules-pdf.png
+
+Should show: Full rules PDF document (SPORTSMENTION.pdf) accessed via "View full rules"
+
+User goal context: - Understand detailed market rules and resolution criteria
+- Access comprehensive contract terms
+- Get help understanding how markets work
+- View simp...
+
+Flow context: 1. User is on a market page (e.g., mentions market)
+2. User sees rules section with:
+   - Rules summary text
+   - "View full rules" link
+   - "Help ce...
+
+[ ] Verified
+
+================================================================================
+Screenshot 041: Market Rules Documentation System
+Status: ❓ TO VERIFY
+File: screenshots/041-support-help-center-rules.png
+
+Should show: Help center page for market rules accessed via "Help center" link
+
+User goal context: - Understand detailed market rules and resolution criteria
+- Access comprehensive contract terms
+- Get help understanding how markets work
+- View simp...
+
+Flow context: 1. User is on a market page (e.g., mentions market)
+2. User sees rules section with:
+   - Rules summary text
+   - "View full rules" link
+   - "Help ce...
+
+[ ] Verified
+
+================================================================================
+Screenshot 042: Market Rules Documentation System
+Status: ❓ TO VERIFY
+File: screenshots/042-market-page-rules-summaries-popup.png
+
+Should show: Rules summaries popup accessed via info icon
+
+User goal context: - Understand detailed market rules and resolution criteria
+- Access comprehensive contract terms
+- Get help understanding how markets work
+- View simp...
+
+Flow context: 1. User is on a market page (e.g., mentions market)
+2. User sees rules section with:
+   - Rules summary text
+   - "View full rules" link
+   - "Help ce...
+
+[ ] Verified
+
+================================================================================
+Screenshot 043: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/043-market-page-multi-market-graph-1.png
+
+Should show: Multi-market graph showing 2 markets (What a Catch, No Good)
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 044: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/044-market-page-market-selection.png
+
+Should show: Market selection interface for adding markets to graph
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 045: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/045-market-page-multi-market-graph-2.png
+
+Should show: Multi-market graph showing 3 markets (Superbowl, What a Catch, No Good)
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 046: Detailed Market Page with Trading Interface
+Status: ❓ TO VERIFY
+File: screenshots/046-market-page-graph-settings-menu.png
+
+Should show: Graph settings menu with toggles and options
+
+User goal context: - View detailed information about a specific market
+- Understand current probabilities and price history
+- Place buy/sell orders on market contracts
+-...
+
+Flow context: 1. User navigates to market page (from homepage, watchlist, portfolio, or direct link)
+2. URL pattern: `kalshi.com/markets/kxnflmention/nfl-mention/kx...
+
+[ ] Verified
+
+================================================================================
+Screenshot 047: Buy/Sell Interface with Contracts Dropdown
+Status: ❓ TO VERIFY
+File: screenshots/047-order-ticket-buy-interface.png
+
+Should show: Buy interface showing Buy tab selected and contracts dropdown
+
+User goal context: - Place buy or sell orders on market contracts
+- Choose order type (market order vs limit order)
+- Choose order denomination (dollars vs contracts)
+- ...
+
+Flow context: 1. User is on market page with trading interface on right sidebar
+2. User sees "Buy" and "Sell" tabs
+3. **Buy Tab (Default):**
+   - "Buy" tab is selec...
+
+[ ] Verified
+
+================================================================================
+Screenshot 048: Buy/Sell Interface with Contracts Dropdown
+Status: ❓ TO VERIFY
+File: screenshots/048-order-ticket-sell-interface.png
+
+Should show: Sell interface showing Sell tab selected and position display
+
+User goal context: - Place buy or sell orders on market contracts
+- Choose order type (market order vs limit order)
+- Choose order denomination (dollars vs contracts)
+- ...
+
+Flow context: 1. User is on market page with trading interface on right sidebar
+2. User sees "Buy" and "Sell" tabs
+3. **Buy Tab (Default):**
+   - "Buy" tab is selec...
+
+[ ] Verified
+
+================================================================================
+Screenshot 049: Buy/Sell Interface with Contracts Dropdown
+Status: ❓ TO VERIFY
+File: screenshots/049-order-ticket-sell-contracts-dropdown.png
+
+Should show: Sell contracts dropdown showing "Sell in contracts" and "Limit order"
+
+User goal context: - Place buy or sell orders on market contracts
+- Choose order type (market order vs limit order)
+- Choose order denomination (dollars vs contracts)
+- ...
+
+Flow context: 1. User is on market page with trading interface on right sidebar
+2. User sees "Buy" and "Sell" tabs
+3. **Buy Tab (Default):**
+   - "Buy" tab is selec...
+
+[ ] Verified
+
+================================================================================
+Screenshot 050: Buy/Sell Interface with Contracts Dropdown
+Status: ❓ TO VERIFY
+File: screenshots/050-order-ticket-buy-contracts-dropdown.png
+
+Should show: Buy contracts dropdown showing "Buy in dollars", "Buy in contracts", and "Limit order"
+
+User goal context: - Place buy or sell orders on market contracts
+- Choose order type (market order vs limit order)
+- Choose order denomination (dollars vs contracts)
+- ...
+
+Flow context: 1. User is on market page with trading interface on right sidebar
+2. User sees "Buy" and "Sell" tabs
+3. **Buy Tab (Default):**
+   - "Buy" tab is selec...
+
+[ ] Verified
+
+================================================================================
+Screenshot 051: Orderbook Popup for Prediction Details
+Status: ❓ TO VERIFY
+File: screenshots/051-order-ticket-orderbook-popup.png
+
+Should show: Orderbook popup showing Trade Yes tab with orderbook (Asks and Bids)
+
+User goal context: - View detailed orderbook for specific prediction
+- See current market depth (asks and bids)
+- Analyze price history for prediction
+- Switch between Y...
+
+Flow context: 1. User is on market page with list of predictions (e.g., mentions market)
+2. User clicks on the prediction word itself (e.g., "No Good", "What a Catc...
+
+[ ] Verified
+
+================================================================================
+Screenshot 052: Orderbook Popup for Prediction Details
+Status: ❓ TO VERIFY
+File: screenshots/052-order-ticket-orderbook-graph-view.png
+
+Should show: Orderbook popup showing Graph tab with price history
+
+User goal context: - View detailed orderbook for specific prediction
+- See current market depth (asks and bids)
+- Analyze price history for prediction
+- Switch between Y...
+
+Flow context: 1. User is on market page with list of predictions (e.g., mentions market)
+2. User clicks on the prediction word itself (e.g., "No Good", "What a Catc...
+
+[ ] Verified
+
+================================================================================
+Screenshot 053: Orderbook Popup for Prediction Details
+Status: ❓ TO VERIFY
+File: screenshots/053-order-ticket-orderbook-basics-help.png
+
+Should show: Order book basics help popup accessed via question icon
+
+User goal context: - View detailed orderbook for specific prediction
+- See current market depth (asks and bids)
+- Analyze price history for prediction
+- Switch between Y...
+
+Flow context: 1. User is on market page with list of predictions (e.g., mentions market)
+2. User clicks on the prediction word itself (e.g., "No Good", "What a Catc...
+
+[ ] Verified
+
+================================================================================
+Screenshot 054: Orderbook Popup for Prediction Details
+Status: ❓ TO VERIFY
+File: screenshots/054-order-ticket-orderbook-settings-menu.png
+
+Should show: Orderbook settings menu showing view options (Traditional, Two sided, Maker only, Taker only)
+
+User goal context: - View detailed orderbook for specific prediction
+- See current market depth (asks and bids)
+- Analyze price history for prediction
+- Switch between Y...
+
+Flow context: 1. User is on market page with list of predictions (e.g., mentions market)
+2. User clicks on the prediction word itself (e.g., "No Good", "What a Catc...
+
+[ ] Verified
+
+================================================================================
+Screenshot 055: Orderbook Popup for Prediction Details
+Status: ❓ TO VERIFY
+File: screenshots/055-order-ticket-orderbook-graph-multi-prediction-bug.png
+
+Should show: Graph view showing multi-prediction lines and cutoff bottom navigation (BUG)
+
+User goal context: - View detailed orderbook for specific prediction
+- See current market depth (asks and bids)
+- Analyze price history for prediction
+- Switch between Y...
+
+Flow context: 1. User is on market page with list of predictions (e.g., mentions market)
+2. User clicks on the prediction word itself (e.g., "No Good", "What a Catc...
+
+[ ] Verified
+
+================================================================================
+Screenshot 056: Footer and Legal Disclosure
+Status: ❓ TO VERIFY
+File: screenshots/056-misc-footer-legal-disclosure.png
+
+Should show: Footer section with company links, social links, product links, and comprehensive risk disclosure
+
+User goal context: - Access company information and resources
+- Find social media links
+- Access product support and regulatory information
+- Understand legal terms and ...
+
+Flow context: 1. User scrolls to bottom of any page (e.g., landing page, trending page)
+2. Footer appears with three main columns:
+   - **Company column:** Company ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 057: Homepage (Logged In - Trending)
+Status: ❓ TO VERIFY
+File: screenshots/057-discovery-trending-for-you-carousel.png
+
+Should show: "For you" tab showing auto-rotating carousel with back/forward arrows
+
+User goal context: - View trending markets after logging in
+- Discover popular markets across categories
+- Access watchlist and portfolio
+- Navigate to specific markets...
+
+Flow context: 1. User logs in (via OAuth or email)
+2. Homepage automatically routes to "Trending" view
+3. **URL Routing:**
+   - **"For you" tab (default):** `kalshi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 058: Homepage (Logged In - Trending)
+Status: ❓ TO VERIFY
+File: screenshots/058-discovery-trending-pro-football-no-carousel.png
+
+Should show: "Pro Football" tab showing standard layout without carousel
+
+User goal context: - View trending markets after logging in
+- Discover popular markets across categories
+- Access watchlist and portfolio
+- Navigate to specific markets...
+
+Flow context: 1. User logs in (via OAuth or email)
+2. Homepage automatically routes to "Trending" view
+3. **URL Routing:**
+   - **"For you" tab (default):** `kalshi...
+
+[ ] Verified
+
+================================================================================
+Screenshot 059: Watchlist and Portfolio Sort Functionality
+Status: ❓ TO VERIFY
+File: screenshots/059-portfolio-watchlist-sort-menu.png
+
+Should show: Watchlist sort menu showing sorting options
+
+User goal context: - Sort watchlist markets by different criteria
+- Sort portfolio positions by different criteria
+- Organize markets/positions for easier navigation
+- M...
+
+Flow context: 1. User is on homepage or market page with Watchlist/Portfolio sidebar visible
+2. **Sort functionality:**
+   - User clicks sort icon (three horizontal...
+
+[ ] Verified
+
+================================================================================
+Screenshot 060: Watchlist and Portfolio Sort Functionality
+Status: ❓ TO VERIFY
+File: screenshots/060-portfolio-portfolio-sort-menu.png
+
+Should show: Portfolio sort menu showing different sorting options
+
+User goal context: - Sort watchlist markets by different criteria
+- Sort portfolio positions by different criteria
+- Organize markets/positions for easier navigation
+- M...
+
+Flow context: 1. User is on homepage or market page with Watchlist/Portfolio sidebar visible
+2. **Sort functionality:**
+   - User clicks sort icon (three horizontal...
+
+[ ] Verified
+
+================================================================================
+Screenshot 061: New Markets with Unique/Repeating Tabs
+Status: ❓ TO VERIFY
+File: screenshots/061-discovery-new-unique-markets.png
+
+Should show: "New" markets section showing "Unique markets" tab (default)
+
+User goal context: - Discover newly added markets
+- Filter between unique (one-time) and repeating (daily/weekly/monthly) markets
+- Find fresh trading opportunities
+- Un...
+
+Flow context: 1. User is on homepage (Trending view)
+2. User clicks "New" in primary category navigation
+3. Page routes to "New" markets view
+4. **URL routing:**
+  ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 062: New Markets with Unique/Repeating Tabs
+Status: ❓ TO VERIFY
+File: screenshots/062-discovery-new-repeating-markets.png
+
+Should show: "New" markets section showing "Repeating markets" tab
+
+User goal context: - Discover newly added markets
+- Filter between unique (one-time) and repeating (daily/weekly/monthly) markets
+- Find fresh trading opportunities
+- Un...
+
+Flow context: 1. User is on homepage (Trending view)
+2. User clicks "New" in primary category navigation
+3. Page routes to "New" markets view
+4. **URL routing:**
+  ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 063: All Category with Advanced Filtering and Sorting
+Status: ❓ TO VERIFY
+File: screenshots/063-discovery-all-category-page.png
+
+Should show: "All" category page showing all markets with filter/sort controls
+
+User goal context: - View all markets across all categories
+- Filter markets by various criteria (frequency, status, etc.)
+- Sort markets by different attributes (trendi...
+
+Flow context: 1. User clicks "All" in primary category navigation OR clicks "Markets" in top navigation bar
+2. **"Markets" navigation link:** Clicking "Markets" in ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 064: All Category with Advanced Filtering and Sorting
+Status: ❓ TO VERIFY
+File: screenshots/064-discovery-all-trending-sort-dropdown.png
+
+Should show: "Trending" sort dropdown with options (Trending, Volatile, New, Closing soon, Volume, Liquidity, 50-50, Reverse sort toggle)
+
+User goal context: - View all markets across all categories
+- Filter markets by various criteria (frequency, status, etc.)
+- Sort markets by different attributes (trendi...
+
+Flow context: 1. User clicks "All" in primary category navigation OR clicks "Markets" in top navigation bar
+2. **"Markets" navigation link:** Clicking "Markets" in ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 065: All Category with Advanced Filtering and Sorting
+Status: ❓ TO VERIFY
+File: screenshots/065-discovery-all-frequency-dropdown.png
+
+Should show: "Frequency" dropdown with options (All, Hourly, Daily, Weekly, Monthly, Annually)
+
+User goal context: - View all markets across all categories
+- Filter markets by various criteria (frequency, status, etc.)
+- Sort markets by different attributes (trendi...
+
+Flow context: 1. User clicks "All" in primary category navigation OR clicks "Markets" in top navigation bar
+2. **"Markets" navigation link:** Clicking "Markets" in ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 066: All Category with Advanced Filtering and Sorting
+Status: ❓ TO VERIFY
+File: screenshots/066-discovery-all-open-markets-dropdown.png
+
+Should show: "Open markets" dropdown with market status options (All markets, Open markets, Closed markets)
+
+User goal context: - View all markets across all categories
+- Filter markets by various criteria (frequency, status, etc.)
+- Sort markets by different attributes (trendi...
+
+Flow context: 1. User clicks "All" in primary category navigation OR clicks "Markets" in top navigation bar
+2. **"Markets" navigation link:** Clicking "Markets" in ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 067: All Category with Advanced Filtering and Sorting
+Status: ❓ TO VERIFY
+File: screenshots/067-discovery-all-filter-button-dropdown.png
+
+Should show: Filter button dropdown with toggle options (Contract price, List view, Exclude sports)
+
+User goal context: - View all markets across all categories
+- Filter markets by various criteria (frequency, status, etc.)
+- Sort markets by different attributes (trendi...
+
+Flow context: 1. User clicks "All" in primary category navigation OR clicks "Markets" in top navigation bar
+2. **"Markets" navigation link:** Clicking "Markets" in ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 068: Politics Category with Sub-Categories
+Status: ❓ TO VERIFY
+File: screenshots/068-discovery-politics-all-subcategory.png
+
+Should show: Politics category showing "All" sub-category with scrollable sub-category navigation
+
+User goal context: - Browse politics markets
+- Filter politics markets by specific topics (Trump Agenda, Culture war, Bills, etc.)
+- Navigate between politics sub-catego...
+
+Flow context: 1. User clicks "Politics" in primary category navigation
+2. Page routes to Politics category view
+3. **URL routing:**
+   - Default "All" sub-category:...
+
+[ ] Verified
+
+================================================================================
+Screenshot 069: Politics Category with Sub-Categories
+Status: ❓ TO VERIFY
+File: screenshots/069-discovery-politics-trump-agenda-subcategory.png
+
+Should show: Politics category showing "Trump Agenda" sub-category with filtered markets
+
+User goal context: - Browse politics markets
+- Filter politics markets by specific topics (Trump Agenda, Culture war, Bills, etc.)
+- Navigate between politics sub-catego...
+
+Flow context: 1. User clicks "Politics" in primary category navigation
+2. Page routes to Politics category view
+3. **URL routing:**
+   - Default "All" sub-category:...
+
+[ ] Verified
+
+================================================================================
+Screenshot 070: Sports Category with Sportsbook-Style Interface
+Status: ❓ TO VERIFY
+File: screenshots/070-discovery-sports-all-sports.png
+
+Should show: Sports category showing sportsbook-style interface with left sidebar, live markets, and trading panel
+
+User goal context: - Browse sports markets in familiar sportsbook format
+- View live sports games with scores and odds
+- Trade on sports outcomes using established sport...
+
+Flow context: 1. User clicks "Sports" in primary category navigation
+2. Page routes to Sports category view
+3. **URL routing:** `kalshi.com/sports/all-sports` (diff...
+
+[ ] Verified
+
+================================================================================
+Screenshot 071: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/071-discovery-culture-category.png
+
+Should show: Culture category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 072: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/072-discovery-crypto-category.png
+
+Should show: Crypto category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 073: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/073-discovery-climate-category.png
+
+Should show: Climate category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 074: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/074-discovery-economics-category.png
+
+Should show: Economics category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 075: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/075-discovery-mentions-category.png
+
+Should show: Mentions category with filter dropdowns
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 076: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/076-discovery-companies-category.png
+
+Should show: Companies category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 077: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/077-discovery-financials-category.png
+
+Should show: Financials category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 078: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/078-discovery-tech-science-category.png
+
+Should show: Tech & Science category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 079: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/079-discovery-health-category.png
+
+Should show: Health category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 080: Category Page Types and Patterns Analysis
+Status: ❓ TO VERIFY
+File: screenshots/080-discovery-world-category.png
+
+Should show: World category with sub-categories
+
+User goal context: - Understand different category page types and navigation patterns
+- Navigate between categories with different structures
+- Filter markets within cat...
+
+[ ] Verified
+
+================================================================================
+Screenshot 081: Live Events Calendar Page
+Status: ❓ TO VERIFY
+File: screenshots/081-discovery-live-calendar-page.png
+
+Should show: Live events calendar page showing live events with left sidebar, main content, and right trading panel
+
+User goal context: - View live events happening now
+- Browse upcoming events by category
+- Trade on live markets while events are in progress
+- See real-time scores and ...
+
+Flow context: 1. User clicks "Live" in top navigation bar
+2. Page routes to Live events calendar page
+3. **URL routing:** `kalshi.com/calendar`
+4. Page displays:
+  ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 082: Ideas Feed Page (Main Social Platform)
+Status: ❓ TO VERIFY
+File: screenshots/082-social-ideas-feed-page.png
+
+Should show: Main Ideas feed page showing social platform with left sidebar, feed tabs, post input, and user posts
+
+User goal context: - Access main social/community platform
+- View and engage with user-generated predictions and ideas
+- Post predictions and market insights
+- Discover ...
+
+Flow context: 1. User clicks "Ideas" in top navigation bar
+2. Page routes to Ideas feed page
+3. **URL routing:** `kalshi.com/ideas/feed` (default) or `kalshi.com/id...
+
+[ ] Verified
+
+================================================================================
+Screenshot 083: Live Trades Tab (Real-Time Trading Activity)
+Status: ❓ TO VERIFY
+File: screenshots/083-social-live-trades-tab.png
+
+Should show: Live trades tab showing real-time trading activity feed with recent trades
+
+User goal context: - View real-time trading activity across all markets
+- See what other users are trading right now
+- Discover active markets through trading activity
+-...
+
+Flow context: 1. User navigates to Ideas feed page (`kalshi.com/ideas/feed`)
+2. User clicks "Live trades" tab
+3. Tab displays real-time trading activity feed
+4. **F...
+
+[ ] Verified
+
+================================================================================
+Screenshot 084: Market Builder Tab (Market Proposal System)
+Status: ❓ TO VERIFY
+File: screenshots/084-social-market-builder-tab.png
+
+Should show: Market builder tab showing market proposal submission and status tracking
+
+User goal context: - Submit proposals to Kalshi team for new markets
+- View status of most recent market requests from everyone
+- Request specific markets to be created
+...
+
+Flow context: 1. User navigates to Ideas feed page (`kalshi.com/ideas/feed`)
+2. User clicks "Market builder" tab
+3. Tab displays market proposal interface
+4. **Step...
+
+[ ] Verified
+
+================================================================================
+Screenshot 085: Market Builder Tab (Market Proposal System)
+Status: ❓ TO VERIFY
+File: screenshots/085-social-market-builder-step-1.png
+
+Should show: Step 1 of 3 guidance for market builder showing instructions and guidelines
+
+User goal context: - Submit proposals to Kalshi team for new markets
+- View status of most recent market requests from everyone
+- Request specific markets to be created
+...
+
+Flow context: 1. User navigates to Ideas feed page (`kalshi.com/ideas/feed`)
+2. User clicks "Market builder" tab
+3. Tab displays market proposal interface
+4. **Step...
+
+[ ] Verified
+
+================================================================================
+Screenshot 086: Ideas Feed Page (Main Social Platform)
+Status: ❓ TO VERIFY
+File: screenshots/086-social-ideas-feed-combo-card.png
+
+Should show: Ideas feed showing combo bet card with multiple predictions and engagement features
+
+User goal context: - Access main social/community platform
+- View and engage with user-generated predictions and ideas
+- Post predictions and market insights
+- Discover ...
+
+Flow context: 1. User clicks "Ideas" in top navigation bar
+2. Page routes to Ideas feed page
+3. **URL routing:** `kalshi.com/ideas/feed` (default) or `kalshi.com/id...
+
+[ ] Verified
+
+================================================================================
+Screenshot 087: User Profile Page with Tabs
+Status: ❓ TO VERIFY
+File: screenshots/087-social-profile-replies-tab.png
+
+Should show: Profile page with Replies tab selected (empty state)
+
+User goal context: - View user profile and activity
+- Navigate between different profile sections (Posts, Replies, Bookmarks, etc.)
+- Control privacy settings for profil...
+
+Flow context: 1. User clicks "Profile" in left sidebar of Ideas feed page
+2. Page routes to user profile page
+3. **URL routing:** `kalshi.com/ideas/profile`
+4. **Pr...
+
+[ ] Verified
+
+================================================================================
+Screenshot 088: User Profile Page with Tabs
+Status: ❓ TO VERIFY
+File: screenshots/088-social-profile-bookmarks-tab.png
+
+Should show: Profile page with Bookmarks tab selected (empty state)
+
+User goal context: - View user profile and activity
+- Navigate between different profile sections (Posts, Replies, Bookmarks, etc.)
+- Control privacy settings for profil...
+
+Flow context: 1. User clicks "Profile" in left sidebar of Ideas feed page
+2. Page routes to user profile page
+3. **URL routing:** `kalshi.com/ideas/profile`
+4. **Pr...
+
+[ ] Verified
+
+================================================================================
+Screenshot 089: User Profile Page with Tabs
+Status: ❓ TO VERIFY
+File: screenshots/089-social-profile-posts-tab.png
+
+Should show: Profile page with Posts tab selected (showing user posts)
+
+User goal context: - View user profile and activity
+- Navigate between different profile sections (Posts, Replies, Bookmarks, etc.)
+- Control privacy settings for profil...
+
+Flow context: 1. User clicks "Profile" in left sidebar of Ideas feed page
+2. Page routes to user profile page
+3. **URL routing:** `kalshi.com/ideas/profile`
+4. **Pr...
+
+[ ] Verified
+
+================================================================================
+Screenshot 090: Community Guidelines
+Status: ❓ TO VERIFY
+File: screenshots/090-social-community-guidelines-pdf.png
+
+Should show: Community Guidelines PDF document (page 1 of 3)
+
+User goal context: - Read platform rules and community guidelines
+- Understand acceptable use policies
+- Learn about trading restrictions and prohibitions...
+
+Flow context: 1. User clicks "Community guidelines" in left sidebar of Ideas feed page
+2. PDF document opens in browser
+3. **URL routing:** `kalshi-public-docs.s3.a...
+
+[ ] Verified
+
+================================================================================
+Screenshot 091: Contact Kalshi Support
+Status: ❓ TO VERIFY
+File: screenshots/091-support-contact-kalshi-support.png
+
+Should show: Contact Kalshi Support page from Help Center
+
+User goal context: - Contact Kalshi support team
+- Get help with issues or questions
+- Submit support requests...
+
+Flow context: 1. User clicks "Support" in left sidebar of Ideas feed page OR navigates to Help Center
+2. Page routes to Contact Kalshi Support page
+3. **URL routing...
+
+[ ] Verified
+
+================================================================================
+Screenshot 092: Kalshi Ideas Help Center Page
+Status: ❓ TO VERIFY
+File: screenshots/092-support-kalshi-ideas-help.png
+
+Should show: Kalshi Ideas help center page explaining the platform
+
+User goal context: - Learn about Kalshi Ideas platform
+- Understand what Kalshi Ideas is and how to use it
+- Get help with Ideas features...
+
+Flow context: 1. User navigates to Help Center (via "Support" link or directly)
+2. User navigates to "Kalshi Ideas" page
+3. **URL routing:** `help.kalshi.com/naviga...
+
+[ ] Verified
+
+================================================================================
+Screenshot 093: Returns Page (Posting on Closed Trades)
+Status: ❓ TO VERIFY
+File: screenshots/093-social-post-trade-requirement-modal.png
+
+Should show: Modal requiring user to make a trade before posting
+
+User goal context: - View closed trades with returns (wins/losses)
+- Post about closed trades that had returns
+- Share trading results and outcomes
+- Post about live pos...
+
+Flow context: **Posting from Live Positions:**
+1. User navigates to Portfolio or position view
+2. User clicks on a live position (combo slip or one-off prediction)
+...
+
+[ ] Verified
+
+================================================================================
+Screenshot 094: Returns Page (Posting on Closed Trades)
+Status: ❓ TO VERIFY
+File: screenshots/094-social-returns-page.png
+
+Should show: Returns page showing closed trades with returns (wins/losses) that can be posted about
+
+User goal context: - View closed trades with returns (wins/losses)
+- Post about closed trades that had returns
+- Share trading results and outcomes
+- Post about live pos...
+
+Flow context: **Posting from Live Positions:**
+1. User navigates to Portfolio or position view
+2. User clicks on a live position (combo slip or one-off prediction)
+...
+
+[ ] Verified
+
+================================================================================
+Screenshot 095: Cash Deposit Options
+Status: ❓ TO VERIFY
+File: screenshots/095-account-cash-deposit-options.png
+
+Should show: Cash deposit options page showing payment methods (Google Pay, Debit card, Bank transfer, Crypto, Wire transfer)
+
+User goal context: - Add cash to account
+- Choose deposit method
+- Understand deposit limits, fees, and processing times
+- Deposit funds quickly and easily...
+
+Flow context: 1. User clicks "Cash" in top navigation bar (next to account balance)
+2. Page routes to Cash deposit options page
+3. **URL routing:** Likely `kalshi.c...
+
+[ ] Verified
+
+================================================================================
+Screenshot 096: Portfolio Main Page
+Status: ❓ TO VERIFY
+File: screenshots/096-portfolio-page-main.png
+
+Should show: Main Portfolio page showing portfolio value, recent change, cash balance, interest eligibility, and tabs (Position, Resting, History)
+
+User goal context: - View portfolio value and performance
+- Check cash balance and available funds
+- View open positions
+- Access portfolio history and resting orders
+- ...
+
+Flow context: 1. User clicks "Portfolio" in top navigation or navigates to portfolio page
+2. **URL routing:** `kalshi.com/portfolio`
+3. **Page displays:**
+   - Port...
+
+[ ] Verified
+
+================================================================================
+Screenshot 097: Leaderboard Activity Page
+Status: ❓ TO VERIFY
+File: screenshots/097-social-leaderboard-page.png
+
+Should show: Leaderboard Activity page showing top users across Profit, Volume, and Predictions metrics
+
+User goal context: - View top-performing users
+- Compare performance across different metrics
+- See rankings for Profit, Volume, and Predictions
+- Understand leaderboard...
+
+Flow context: 1. User clicks trophy/cup icon in top navigation bar (next to notifications)
+2. Page routes to Leaderboard Activity page
+3. **URL routing:** `kalshi.c...
+
+[ ] Verified
+
+================================================================================
+Screenshot 098: Notifications Page
+Status: ❓ TO VERIFY
+File: screenshots/098-notifications-page.png
+
+Should show: Notifications page showing chronological list of alerts (market updates, settlements, price movements)
+
+User goal context: - View all notifications in one place
+- Stay updated on market activities
+- Track market settlements and price movements
+- Monitor event updates and p...
+
+Flow context: 1. User clicks notification bell icon in top navigation bar
+2. **URL routing:** Likely `kalshi.com/notifications` or similar
+3. **Page displays:**
+   ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 099: Hamburger Menu (Account Navigation)
+Status: ❓ TO VERIFY
+File: screenshots/099-account-hamburger-menu.png
+
+Should show: Hamburger menu slide-in panel showing account navigation options
+
+User goal context: - Access account settings and features
+- Navigate to different account sections
+- Quick access to key actions (Leaderboard, Add funds, Invite friends)...
+
+Flow context: 1. User clicks hamburger menu icon (three horizontal lines) in top navigation bar
+2. Menu slides in from right side, overlaying main content
+3. **Menu...
+
+[ ] Verified
+
+================================================================================
+Screenshot 100: Account & Security Page
+Status: ❓ TO VERIFY
+File: screenshots/100-account-security-page.png
+
+Should show: Account & security page showing profile information, two-factor authentication, and API keys
+
+User goal context: - View and edit account information
+- Manage security settings (two-factor authentication)
+- Create and manage API keys
+- Deactivate account if needed...
+
+Flow context: 1. User clicks "Account & security" in hamburger menu or right sidebar
+2. Page routes to Account & security page
+3. **URL routing:** `kalshi.com/accou...
+
+[ ] Verified
+
+================================================================================
+Screenshot 101: Your Activity Page (Transaction History)
+Status: ❓ TO VERIFY
+File: screenshots/101-account-activity-page.png
+
+Should show: Your activity page showing transaction history with filters
+
+User goal context: - View transaction history
+- Filter transactions by type (Deposit, Withdrawal, Order, Trade, Settlement, Reward)
+- Download transaction data
+- Track a...
+
+Flow context: 1. User clicks "Your activity" in hamburger menu or right sidebar
+2. Page routes to Your activity page
+3. **URL routing:** `kalshi.com/account/activit...
+
+[ ] Verified
+
+================================================================================
+Screenshot 102: Transfers Page (Banking & Deposits)
+Status: ❌ KNOWN ISSUE
+File: screenshots/102-account-transfers-page.png
+
+Should show: Transfers page showing deposit/withdrawal options, linked accounts, and transaction history
+
+User goal context: - Deposit funds to account
+- Withdraw funds from account
+- Manage linked bank accounts
+- View transfer history
+- Understand cash holding and interest ...
+
+Flow context: 1. User clicks "Transfers" in hamburger menu or right sidebar
+2. Page routes to Transfers page
+3. **URL routing:** `kalshi.com/account/banking`
+4. **P...
+
+[ ] Verified
+
+================================================================================
+Screenshot 103: Documents Page
+Status: ❓ TO VERIFY
+File: screenshots/103-account-documents-page.png
+
+Should show: Documents page showing tax information, PnL by year, and IRS reporting details
+
+User goal context: - View tax documents and PnL information
+- Access IRS reporting details
+- Download tax-related documents
+- Understand tax implications of trading...
+
+Flow context: 1. User clicks "Documents" in hamburger menu or account navigation
+2. Page routes to Documents page
+3. **URL routing:** `kalshi.com/account/documents`...
+
+[ ] Verified
+
+================================================================================
+Screenshot 104: Incentives Page
+Status: ❓ TO VERIFY
+File: screenshots/104-account-incentives-page.png
+
+Should show: Incentives page showing rewards program, market list, and reward details
+
+User goal context: - View rewards program details
+- See available incentives and markets
+- Understand reward structure
+- Track reward progress...
+
+Flow context: 1. User clicks "Incentive program" in hamburger menu or account navigation
+2. Page routes to Incentives page
+3. **URL routing:** `kalshi.com/account/i...
+
+[ ] Verified
+
+================================================================================
+Screenshot 105: API Documentation Portal
+Status: ❓ TO VERIFY
+File: screenshots/105-account-api-docs-page.png
+
+Should show: API documentation welcome page showing key documentation areas
+
+User goal context: - Access API documentation for Kalshi Exchange
+- Learn how to integrate with Kalshi API
+- Find API reference information
+- Get started with API develo...
+
+Flow context: 1. User clicks "API Docs" in hamburger menu OR clicks "API" in top navigation
+2. Page routes to API documentation portal
+3. **URL routing:** `docs.kal...
+
+[ ] Verified
+
+================================================================================
+Screenshot 106: Settings Page (Market Display Customization)
+Status: ❓ TO VERIFY
+File: screenshots/106-account-settings-page.png
+
+Should show: Settings page showing market display customization and email notification preferences
+
+User goal context: - Customize how markets are displayed (payout/odds vs shares/prices vs American odds)
+- Manage email notification preferences
+- Personalize platform e...
+
+Flow context: 1. User clicks "Settings" in hamburger menu or right sidebar
+2. Page routes to Settings page
+3. **URL routing:** `kalshi.com/account/settings`
+4. **Pa...
+
+[ ] Verified
+
+================================================================================
+Screenshot 107: Referrals Page
+Status: ❓ TO VERIFY
+File: screenshots/107-account-referrals-page.png
+
+Should show: Referrals page showing referral program details and referral link
+
+User goal context: - View referral program details
+- Get referral link to share
+- Track referral progress
+- See referral rewards...
+
+Flow context: 1. User clicks "Invite friends" in hamburger menu or account navigation
+2. Page routes to Referrals page
+3. **URL routing:** `kalshi.com/account/refer...
+
+[ ] Verified
+
+================================================================================
+Screenshot 108: Cash Deposit Options
+Status: ❓ TO VERIFY
+File: screenshots/108-account-deposit-confirmation-auto-signature.png
+
+Should show: Deposit confirmation screen with auto-generated signature and "Start trading" button
+
+User goal context: - Add cash to account
+- Choose deposit method
+- Understand deposit limits, fees, and processing times
+- Deposit funds quickly and easily...
+
+Flow context: 1. User clicks "Cash" in top navigation bar (next to account balance)
+2. Page routes to Cash deposit options page
+3. **URL routing:** Likely `kalshi.c...
+
+[ ] Verified
+
+================================================================================
+Screenshot 109: Combo Creation Flow (Mobile)
+Status: ❓ TO VERIFY
+File: screenshots/109-trading-combo-creation-mobile.png
+
+Should show: Combo creation interface on mobile showing prediction cards with Yes/No selections
+
+User goal context: - Create combo bets combining multiple predictions
+- Select Yes/No for each prediction in combo
+- Review combo before placing trade
+- Complete combo t...
+
+Flow context: 1. User navigates to Sports category and selects "Combo" sub-navigation
+2. User starts creating combo bet
+3. **Combo creation interface displays:**
+  ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 110: Combo Creation Flow (Mobile)
+Status: ❓ TO VERIFY
+File: screenshots/110-trading-combo-confirmation-mobile.png
+
+Should show: Combo confirmation screen showing 9 predictions, payout, and cost
+
+User goal context: - Create combo bets combining multiple predictions
+- Select Yes/No for each prediction in combo
+- Review combo before placing trade
+- Complete combo t...
+
+Flow context: 1. User navigates to Sports category and selects "Combo" sub-navigation
+2. User starts creating combo bet
+3. **Combo creation interface displays:**
+  ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 111: Combo Creation Flow (Mobile)
+Status: ❓ TO VERIFY
+File: screenshots/111-trading-combo-expired-error.png
+
+Should show: "Expired" error modal with "Take me back" button
+
+User goal context: - Create combo bets combining multiple predictions
+- Select Yes/No for each prediction in combo
+- Review combo before placing trade
+- Complete combo t...
+
+Flow context: 1. User navigates to Sports category and selects "Combo" sub-navigation
+2. User starts creating combo bet
+3. **Combo creation interface displays:**
+  ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 112: Combo Creation Flow (Mobile)
+Status: ❓ TO VERIFY
+File: screenshots/112-trading-combo-price-changed-error.png
+
+Should show: "The price changed" error modal when odds change during order placement
+
+User goal context: - Create combo bets combining multiple predictions
+- Select Yes/No for each prediction in combo
+- Review combo before placing trade
+- Complete combo t...
+
+Flow context: 1. User navigates to Sports category and selects "Combo" sub-navigation
+2. User starts creating combo bet
+3. **Combo creation interface displays:**
+  ...
+
+[ ] Verified
+
+================================================================================
+Screenshot 113: Portfolio Position Cash Out Feature
+Status: ❓ TO VERIFY
+File: screenshots/113-portfolio-position-cashout-popup.png
+
+Should show: Position popup showing cash out option with current value vs cash out value
+
+User goal context: - View open position details
+- Understand current value vs cash out value
+- Cash out position early (before market resolution)
+- Get liquidity for pos...
+
+Flow context: 1. User views Portfolio page
+2. User clicks on a position in "Position" tab
+3. **"Your position" popup appears:**
+   - Shows market information
+   - S...
+
+[ ] Verified
+
+================================================================================
+Screenshot 114: Order Completion Confirmation (Single Prediction)
+Status: ❓ TO VERIFY
+File: screenshots/114-trading-order-completed-single.png
+
+Should show: Order completion confirmation screen for single prediction trade
+
+User goal context: - Confirm successful order placement
+- Review trade details (market, odds, cost, payout)
+- Share trade on social feed (Ideas)
+- Continue to next actio...
+
+Flow context: 1. User places a single prediction trade (any market type, not just sports)
+2. Order is successfully processed
+3. **Order completion screen appears:**...
+
+[ ] Verified
+
+================================================================================
+Screenshot 115: No Counterparty Modal (Liquidity Warning)
+Status: ❓ TO VERIFY
+File: screenshots/115-trading-no-counterparty-modal.png
+
+Should show: Modal warning that there's no one to trade against, with limit order option
+
+User goal context: - Understand why trade cannot be executed immediately
+- Decide whether to place limit order or cancel
+- Get notified when counterparty becomes availab...
+
+Flow context: 1. User attempts to place a trade on a market
+2. **If no counterparty available:**
+   - Modal appears: "There's no one to trade against"
+   - Modal ex...
+
+[ ] Verified

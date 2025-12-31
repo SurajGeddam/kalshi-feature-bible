@@ -277,7 +277,7 @@ For each feature, use this structure:
 **Feature category:** Onboarding / Compliance
 
 **Screenshots:**  
-- 014: `014-onboarding-legal-terms-modal.png` - Legal terms popup showing all agreements and policies
+- 014: `014-onboarding-legal-terms-modal.png` - ⚠️ **ISSUE: Currently shows duplicate of 013 (email validation). Missing: Legal terms popup showing all agreements and policies**
 
 ![014 Legal terms modal](screenshots/01-onboarding/014-onboarding-legal-terms-modal.png)
 
@@ -669,7 +669,7 @@ For each feature, use this structure:
 **Feature category:** Onboarding / OAuth
 
 **Screenshots:**  
-- 018: `018-onboarding-apple-oauth.png` - Apple ID authentication page for first-time OAuth
+- 018: `018-onboarding-apple-oauth.png` - ⚠️ **ISSUE: Currently shows logged-in discovery page (should be 017). Missing: Apple ID authentication page for first-time OAuth**
 
 ![018 Apple OAuth](screenshots/01-onboarding/018-onboarding-apple-oauth.png)
 

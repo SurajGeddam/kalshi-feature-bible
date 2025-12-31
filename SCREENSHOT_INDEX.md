@@ -19,11 +19,11 @@
 | 011 | Onboarding | `screenshots/01-onboarding/011-onboarding-signup-modal.png` | Sign up modal | Registration modal with Google, Apple, and email options |
 | 012 | Onboarding | `screenshots/01-onboarding/012-onboarding-login-modal.png` | Log in modal | Login modal with Google, Apple, and email options |
 | 013 | Onboarding | `screenshots/01-onboarding/013-onboarding-email-validation.png` | Email input with validation | Email sign-up screen showing real-time validation error |
-| 014 | Onboarding | `screenshots/01-onboarding/014-onboarding-legal-terms-modal.png` | Legal terms modal | Legal terms popup showing all agreements and policies |
+| 014 | Onboarding | `screenshots/01-onboarding/014-onboarding-legal-terms-modal.png` | Legal terms modal | ⚠️ ISSUE: Currently duplicate of 013. Missing: Legal terms popup showing all agreements and policies |
 | 015 | Onboarding | `screenshots/01-onboarding/015-onboarding-password-creation.png` | Password creation | Password creation screen with real-time requirement validation |
 | 016 | Onboarding | `screenshots/01-onboarding/016-onboarding-duplicate-account.png` | Duplicate account detection | Page shown when user tries to sign up with existing email |
 | 017 | Market Page | `screenshots/04-market-page/017-market-page-logged-in-discovery.png` | Logged-in discovery page | Discovery page after successful OAuth login (from duplicate account page) |
-| 018 | Onboarding | `screenshots/01-onboarding/018-onboarding-apple-oauth.png` | Apple OAuth flow | Apple ID authentication page for first-time OAuth authorization |
+| 018 | Onboarding | `screenshots/01-onboarding/018-onboarding-apple-oauth.png` | Apple OAuth flow | ⚠️ ISSUE: Currently shows logged-in discovery page (should be 017). Missing: Apple ID authentication page for first-time OAuth authorization |
 | 019 | Discovery | `screenshots/03-discovery/019-discovery-homepage-trending.png` | Homepage trending | Logged-in homepage defaulting to trending markets |
 | 020 | Portfolio | `screenshots/06-portfolio/020-portfolio-empty-state.png` | Portfolio empty state | Portfolio tab showing empty state when no open positions |
 | 021 | Market Page | `screenshots/04-market-page/021-market-page-detailed-trading.png` | Detailed market page with trading | Market page with trading interface, chart, and contract options |
