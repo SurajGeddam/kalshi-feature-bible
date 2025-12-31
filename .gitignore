@@ -1,39 +1,54 @@
-# OS files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Essential files to keep (DO NOT IGNORE):
+# - BUG_LOG.md
+# - DELTA_TABLE.md
+# - KALSHI_FEATURE_BIBLE.md
+# - RAW_NOTES.md
+# - README.md
+# - SCREENSHOT_INDEX.md
+# - TRADING_EXPERIENCE.md
+# - VIEWING_GUIDE.md
+# - .gitignore
+# - screenshots/
 
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Ignore all other markdown files
+*.md
+!BUG_LOG.md
+!DELTA_TABLE.md
+!KALSHI_FEATURE_BIBLE.md
+!RAW_NOTES.md
+!README.md
+!SCREENSHOT_INDEX.md
+!TRADING_EXPERIENCE.md
+!VIEWING_GUIDE.md
 
-# Temporary files
-*.tmp
-*.log
+# Ignore all Python scripts
+*.py
 
-# Python (if any)
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
+# Ignore all shell scripts
+*.sh
 
-# Node (if any)
-node_modules/
-npm-debug.log
-yarn-error.log
+# Ignore all text files
+*.txt
 
-# Keep all markdown and screenshots
-!*.md
-!screenshots/**/*.png
-!screenshots/**/*.jpg
+# Ignore verification/audit files
+VERIFICATION_*
+AUDIT_*
+SCREENSHOT_VERIFICATION_*
+SCREENSHOT_REMAP_*
+SCREENSHOT_MISMATCH_*
+SCREENSHOT_CORRECTIONS*
+BATCH_*
+FIX_*
+COMPREHENSIVE_*
+FINAL_*
+GITHUB_*
+PUSH_*
+QUICK_*
+SETUP_*
+VERIFICATION_*
 
+# Ignore .cursor directory
+.cursor/
+
+# Keep screenshots folder
+!screenshots/
