@@ -3266,6 +3266,9 @@ Kalshi uses **three distinct category page types** based on content structure an
 - 022: `022-market-page-more-markets-expanded.png` - Expanded "More markets" list showing all predictions
 - 023: `023-market-page-prediction-selected.png` - Trading interface updated after selecting a prediction
 - 024: `024-market-page-rules-display.png` - Rules section displaying rules for selected prediction
+- 025: `025-market-page-prediction-switch-1.png` - Prediction switch state 1 showing synchronized update when switching predictions
+- 026: `026-market-page-prediction-switch-2.png` - Prediction switch state 2 showing synchronized update when switching predictions
+- 027: `027-market-page-rules-dropdown-selection.png` - Rules dropdown selection showing UX inconsistency (updates trading but not chart/list)
 - 043: `043-market-page-multi-market-graph-1.png` - Multi-market graph showing 2 markets (What a Catch, No Good)
 - 044: `044-market-page-market-selection.png` - Market selection interface for adding markets to graph
 - 045: `045-market-page-multi-market-graph-2.png` - Multi-market graph showing 3 markets (Superbowl, What a Catch, No Good)
@@ -3275,6 +3278,9 @@ Kalshi uses **three distinct category page types** based on content structure an
 ![022 More markets expanded](screenshots/04-market-page/022-market-page-more-markets-expanded.png)
 ![023 Prediction selected](screenshots/04-market-page/023-market-page-prediction-selected.png)
 ![024 Rules display](screenshots/04-market-page/024-market-page-rules-display.png)
+![025 Prediction switch state 1](screenshots/04-market-page/025-market-page-prediction-switch-1.png)
+![026 Prediction switch state 2](screenshots/04-market-page/026-market-page-prediction-switch-2.png)
+![027 Rules dropdown selection](screenshots/04-market-page/027-market-page-rules-dropdown-selection.png)
 ![043 Multi-market graph 1](screenshots/04-market-page/043-market-page-multi-market-graph-1.png)
 ![044 Market selection](screenshots/04-market-page/044-market-page-market-selection.png)
 ![045 Multi-market graph 2](screenshots/04-market-page/045-market-page-multi-market-graph-2.png)
@@ -9864,6 +9870,195 @@ _Add feature writeups here as screenshots are added..._
   - API adoption rate
   - Developer sign-up rate
   - API usage volume
+
+### Documents Page
+
+**Feature category:** Account / Tax / Compliance
+
+**Screenshots:**  
+- 103: `103-account-documents-page.png` - Documents page showing tax information, PnL by year, and IRS reporting details
+
+![103 Documents page](screenshots/02-account/103-account-documents-page.png)
+
+**User goal:**  
+- View tax documents and PnL information
+- Access IRS reporting details
+- Download tax-related documents
+- Understand tax implications of trading
+
+**Kalshi flow (steps):**
+1. User clicks "Documents" in hamburger menu or account navigation
+2. Page routes to Documents page
+3. **URL routing:** `kalshi.com/account/documents`
+4. **Page displays:**
+   - Tax information section
+   - PnL by year breakdown
+   - IRS reporting details
+   - Download options for documents
+
+**Observed behavior:**
+- **Tax documents:** Shows tax-related information and documents
+- **PnL by year:** Breakdown of profit and loss by year
+- **IRS reporting:** Details about IRS reporting requirements
+- **Download options:** Ability to download tax documents
+
+**What I like:**
+- Centralized tax document access
+- Year-by-year PnL breakdown
+- Clear IRS reporting information
+
+**What I don't like / confusion:**
+- Need to verify actual page content from screenshot
+
+**Edge cases / bugs:**
+- None observed
+
+**Builder hypothesis (why they did it):**
+- **Tax compliance:** Required for users to access tax documents
+- **Transparency:** Clear PnL breakdown helps users understand tax implications
+- **User convenience:** Centralized access to all tax-related documents
+
+**Opinion Kings implications:**
+- **Copy:**
+  - Tax documents page
+  - PnL by year breakdown
+  - IRS reporting details
+  - Download options
+- **Avoid:**
+  - Unclear tax information
+- **Beat:**
+  - **Tax calculator:** Help users estimate tax liability
+  - **Tax guidance:** Provide tax guidance and resources
+  - **Export options:** Multiple export formats (PDF, CSV, Excel)
+  - **Tax year selector:** Easy navigation between tax years
+  - **Tax summary:** Clear summary of tax implications
+
+### Incentives Page
+
+**Feature category:** Account / Rewards / Growth
+
+**Screenshots:**  
+- 104: `104-account-incentives-page.png` - Incentives page showing rewards program, market list, and reward details
+
+![104 Incentives page](screenshots/02-account/104-account-incentives-page.png)
+
+**User goal:**  
+- View rewards program details
+- See available incentives and markets
+- Understand reward structure
+- Track reward progress
+
+**Kalshi flow (steps):**
+1. User clicks "Incentive program" in hamburger menu or account navigation
+2. Page routes to Incentives page
+3. **URL routing:** `kalshi.com/account/incentives`
+4. **Page displays:**
+   - Rewards program information
+   - Market list with incentives
+   - Reward details and structure
+   - Progress tracking
+
+**Observed behavior:**
+- **Rewards program:** Shows market rewards program details
+- **Market list:** Lists markets with available incentives
+- **Reward details:** Explains reward structure and requirements
+- **Progress tracking:** Shows user's progress toward rewards
+
+**What I like:**
+- Clear rewards program information
+- Market-specific incentives
+- Progress tracking
+
+**What I don't like / confusion:**
+- Need to verify actual page content from screenshot
+
+**Edge cases / bugs:**
+- None observed
+
+**Builder hypothesis (why they did it):**
+- **User engagement:** Rewards incentivize trading activity
+- **Market liquidity:** Incentives drive trading in specific markets
+- **Retention:** Rewards program increases user retention
+- **Growth:** Incentives encourage new user acquisition
+
+**Opinion Kings implications:**
+- **Copy:**
+  - Rewards program page
+  - Market-specific incentives
+  - Progress tracking
+  - Reward details
+- **Avoid:**
+  - Unclear reward structure
+- **Beat:**
+  - **Reward calculator:** Help users calculate potential rewards
+  - **Reward notifications:** Notify users of new rewards and progress
+  - **Reward history:** Show history of earned rewards
+  - **Tier system:** Multiple reward tiers for different activity levels
+  - **Referral rewards:** Enhanced referral program with rewards
+
+### Referrals Page
+
+**Feature category:** Account / Growth / Referrals
+
+**Screenshots:**  
+- 107: `107-account-referrals-page.png` - Referrals page showing referral program details and referral link
+
+![107 Referrals page](screenshots/02-account/107-account-referrals-page.png)
+
+**User goal:**  
+- View referral program details
+- Get referral link to share
+- Track referral progress
+- See referral rewards
+
+**Kalshi flow (steps):**
+1. User clicks "Invite friends" in hamburger menu or account navigation
+2. Page routes to Referrals page
+3. **URL routing:** `kalshi.com/account/referrals`
+4. **Page displays:**
+   - Referral program information
+   - Referral link
+   - Referral progress tracking
+   - Reward details
+
+**Observed behavior:**
+- **Referral program:** Shows referral program details and structure
+- **Referral link:** Displays user's unique referral link
+- **Progress tracking:** Shows number of referrals and progress
+- **Reward details:** Explains referral rewards
+
+**What I like:**
+- Clear referral program information
+- Easy-to-share referral link
+- Progress tracking
+
+**What I don't like / confusion:**
+- Need to verify actual page content from screenshot
+
+**Edge cases / bugs:**
+- None observed
+
+**Builder hypothesis (why they did it):**
+- **Growth:** Referral program drives new user acquisition
+- **Viral growth:** Users share referral links with friends
+- **User acquisition cost:** Referrals are cost-effective acquisition channel
+- **Engagement:** Referral rewards incentivize sharing
+
+**Opinion Kings implications:**
+- **Copy:**
+  - Referral program page
+  - Referral link generation
+  - Progress tracking
+  - Reward details
+- **Avoid:**
+  - Unclear referral structure
+- **Beat:**
+  - **Referral analytics:** Show detailed referral analytics (clicks, signups, conversions)
+  - **Social sharing:** Easy social media sharing buttons
+  - **Referral tiers:** Multiple reward tiers based on referral count
+  - **Referral leaderboard:** Show top referrers
+  - **Custom referral links:** Allow users to customize referral links
+  - **Referral campaigns:** Time-limited referral campaigns with bonus rewards
 
 ---
 

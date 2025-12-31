@@ -11,6 +11,10 @@ This repository contains a complete feature-by-feature analysis of Kalshi, docum
 - Bugs and edge cases
 - Opinion Kings implications
 
+## Executive Summary
+
+This documentation represents a comprehensive competitive analysis of Kalshi, capturing 106 screenshots across 54 features, 9 documented bugs, and detailed user experience insights from real-world trading. While Opinion Kings and Kalshi are similar prediction market platforms, this analysis serves as a strategic reference to understand proven UX patterns, identify pain points to avoid, and discover opportunities to differentiate. The documentation includes a feature comparison table (DELTA_TABLE.md) that maps each Kalshi feature to our product strategy—whether to copy, modify, differentiate, or skip—ensuring we build on what works while creating a unique value proposition that aligns with our vision for Opinion Kings.
+
 ## Quick Start
 
 **New to this documentation?** Start here:
