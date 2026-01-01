@@ -2,11 +2,8 @@
 # - BUG_LOG.md
 # - DELTA_TABLE.md
 # - KALSHI_FEATURE_BIBLE.md
-# - RAW_NOTES.md
-# - README.md
 # - SCREENSHOT_INDEX.md
 # - TRADING_EXPERIENCE.md
-# - VIEWING_GUIDE.md
 # - .gitignore
 # - screenshots/
 
@@ -15,11 +12,8 @@
 !BUG_LOG.md
 !DELTA_TABLE.md
 !KALSHI_FEATURE_BIBLE.md
-!RAW_NOTES.md
-!README.md
 !SCREENSHOT_INDEX.md
 !TRADING_EXPERIENCE.md
-!VIEWING_GUIDE.md
 
 # Ignore all Python scripts
 *.py
